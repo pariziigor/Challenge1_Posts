@@ -1,3 +1,5 @@
+import { showPostPage } from "posts";
+
 export interface Post {
     id: number;
     title: string;
@@ -34,3 +36,4 @@ export const comments: Comment[] = [
 ];
 
 console.log(comments);
+showPostPage();

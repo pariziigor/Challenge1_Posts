@@ -1,3 +1,4 @@
+import { showPostPage } from "./posts.js";
 export const comments = [
     {
         id: 1,
@@ -19,4 +20,5 @@ export const comments = [
     }
 ];
 console.log(comments);
+showPostPage();
 //# sourceMappingURL=app.js.map
