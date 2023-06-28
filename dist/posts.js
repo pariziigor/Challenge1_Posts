@@ -1,24 +1,5 @@
+import { posts } from "./app.js";
 import { showPostDetailsPage } from "./postsDetail.js";
-const posts = [
-    {
-        id: 1,
-        title: "First Post",
-        imageUrl: "Test",
-        body: "First post text",
-    },
-    {
-        id: 2,
-        title: "Second Post",
-        imageUrl: "Test2",
-        body: "Second post text",
-    },
-    {
-        id: 3,
-        title: "Third Post",
-        imageUrl: "Test3",
-        body: "Third post text",
-    }
-];
 export function showPostPage() {
     const postsElement = document.getElementById("posts");
     if (!postsElement)
@@ -38,5 +19,4 @@ export function showPostPage() {
         });
     });
 }
-console.log(posts);
 //# sourceMappingURL=posts.js.map

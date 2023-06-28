@@ -1,4 +1,4 @@
-import { Post, Comment, comments, posts} from "./app";
+import { Post, Comment, comments, posts} from "app";
 
 function getCommentsByPostId(postId: number): Comment[] {
     return comments.filter((comment) => comment.postId === postId);
