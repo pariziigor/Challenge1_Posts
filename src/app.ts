@@ -14,6 +14,29 @@ export interface Comment {
     body: string;
 }
 
+export const posts: Post[] = [
+    {
+        id: 1,
+        title: "First Post",
+        imageUrl: "Test",
+        body: "First post text",
+    },
+
+    {
+        id: 2,
+        title: "Second Post",
+        imageUrl: "Test2",
+        body: "Second post text",
+    },
+
+    {
+        id: 3,
+        title: "Third Post",
+        imageUrl: "Test3",
+        body: "Third post text",
+    }
+];
+
 export const comments: Comment[] = [
     {
         id: 1,

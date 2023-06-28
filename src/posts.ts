@@ -1,4 +1,5 @@
-import { Post, Comment} from "app";
+import { Post } from "app";
+import { showPostDetailsPage } from "postsDetail";
 
 const posts: Post[] = [
     {
@@ -39,10 +40,10 @@ export function showPostPage() {
         postLink.textContent = posts.title;
         postItem.appendChild(postLink);
 
-        // postLink.addEventListener("click", (event) => {
-                // event.preventDefault();
-                // showPostDetailsPage(posts.id);
-        // });
+        postLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            showPostDetailsPage(posts.id);
+        });
     });
 }
 

@@ -1,3 +1,4 @@
+import { showPostDetailsPage } from "./postsDetail.js";
 const posts = [
     {
         id: 1,
@@ -31,10 +32,10 @@ export function showPostPage() {
         postLink.href = "";
         postLink.textContent = posts.title;
         postItem.appendChild(postLink);
-        // postLink.addEventListener("click", (event) => {
-        // event.preventDefault();
-        // showPostDetailsPage(posts.id);
-        // });
+        postLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            showPostDetailsPage(posts.id);
+        });
     });
 }
 console.log(posts);
