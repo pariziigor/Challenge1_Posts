@@ -1,24 +1,24 @@
 import { posts } from "./app.js";
 import { showPostDetailsPage } from "./postsDetail.js";
 export function showPostPage() {
-    const postsElement = document.getElementById("div");
+    const postsElement = document.getElementById("posts");
     if (!postsElement)
         return;
-    const postDiv = document.createElement("section");
-    postsElement.appendChild(postDiv);
     posts.forEach((posts) => {
+        const postDiv = document.createElement("div");
+        postsElement.appendChild(postDiv);
         const postImg = document.createElement("img");
-        postImg.textContent = posts.imageUrl;
+        postImg.src = posts.imageUrl;
         postDiv.appendChild(postImg);
         const postTitle = document.createElement("h3");
         postTitle.textContent = posts.title;
-        postImg.appendChild(postTitle);
+        postDiv.appendChild(postTitle);
         const postBody = document.createElement("p");
         postBody.textContent = posts.body;
-        postTitle.appendChild(postBody);
+        postDiv.appendChild(postBody);
         const postLink = document.createElement("a");
-        postLink.href = "";
-        postLink.textContent = posts.title;
+        postLink.href = "#";
+        postLink.textContent = "Expand...";
         postBody.appendChild(postLink);
         postLink.addEventListener("click", (event) => {
             event.preventDefault();
