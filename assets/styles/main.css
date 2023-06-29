@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -16,12 +18,29 @@ header {
 h1 {
     color: #FFF;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 600;
+    line-height: normal;
 }
 
 img {
     width: 28px;
     height: 28px;
+    flex-shrink: 0;
+}
+
+#title {
+    display: flex;
+    padding: 15px 79px;
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3.6px;
+    color: #3A4F9A;
+    width: 221px;
+    height: 46px;
     flex-shrink: 0;
 }
