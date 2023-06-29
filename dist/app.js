@@ -3,31 +3,31 @@ export const posts = [
     {
         id: 1,
         title: "Discovering the Magic of Los Angeles",
-        imageUrl: "Test",
+        imageUrl: "https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
         body: "Los Angeles, often referred to as the City of Angels, is a vibrant and diverse metropolis located on the west coast of the United States. Known for its sunny weather, palm-lined streets, and iconic landmarks, Los Angeles offers a unique blend of culture, entertainment, and natural beauty.",
     },
     {
         id: 2,
         title: "New York: The City That Never Sleeps",
-        imageUrl: "Test2",
+        imageUrl: "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
         body: "The city's skyline is dominated by the majestic Empire State Building, offering breathtaking views of the bustling streets below. Take a leisurely stroll through Central Park, an oasis of green in the heart of the concrete jungle, or explore the trendy neighborhoods of SoHo and Greenwich Village, known for their art galleries, boutiques, and cozy cafes.",
     },
     {
         id: 3,
         title: "San Francisco: A City of Contrasts",
-        imageUrl: "Test3",
+        imageUrl: "https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
         body: "Nestled on the picturesque California coastline, San Francisco is a city of contrasts, blending stunning natural beauty with a rich cultural heritage. Known for its iconic landmarks, vibrant neighborhoods, and progressive mindset, San Francisco offers a unique and unforgettable experience.",
     },
     {
         id: 4,
         title: "Chicago: The Windy City's Dynamic Charm",
-        imageUrl: "Test4",
+        imageUrl: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=944&q=80",
         body: "Chicago, known as the Windy City, exudes a dynamic charm that captivates visitors from near and far. Situated on the shores of Lake Michigan, this vibrant metropolis offers a blend of architectural marvels, cultural richness, and a thriving arts scene."
     },
     {
         id: 5,
         title: "Las Vegas: The Glittering Playground",
-        imageUrl: "Test5",
+        imageUrl: "https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80",
         body: "Las Vegas, often referred to as the Entertainment Capital of the World, is a dazzling city that beckons visitors with its vibrant lights, extravagant hotels, and non-stop entertainment. Nestled in the heart of the Nevada desert, Las Vegas is a playground for those seeking excitement, indulgence, and unforgettable experiences."
     }
 ];
