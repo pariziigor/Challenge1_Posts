@@ -1,5 +1,5 @@
-import { posts } from "./app";
-import { showPostDetailsPage } from "./postsDetail";
+import { posts } from "app";
+import { showPostDetailsPage } from "postsDetail";
 
 export function showPostPage() {
     const postsElement = document.getElementById("posts")
