@@ -9,6 +9,10 @@ export function showPostPage() {
         const postDiv = document.createElement("div");
         postsElement.appendChild(postDiv);
         postDiv.classList.add("post-div");
+        postDiv.addEventListener("click", (event) => {
+            event.preventDefault();
+            showPostDetailsPage(posts.id);
+        });
 
         const postImg = document.createElement("img");
         postImg.src = posts.imageUrl;
