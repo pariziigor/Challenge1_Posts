@@ -7,13 +7,16 @@
 
 header {
     display: flex;
-    width: 1512px;
     padding: 15px 79px;
     align-items: flex-start;
     gap: 8px;
     background-color: #32325D;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 
 h1 {
     color: #FFF;
@@ -30,9 +33,18 @@ img {
     flex-shrink: 0;
 }
 
-#title {
+#posts {
     display: flex;
-    padding: 15px 79px;
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.title {
+    display: flex;
+    padding: 150px 79px;
     font-size: 36px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -46,3 +58,59 @@ img {
     text-decoration: underline;
     text-underline-offset: 1.2rem;
 }
+
+.post-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    width: 409px;
+    height: 455px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.post-img {
+    width: 409px;
+    height: 273px;
+    flex-shrink: 0;
+}
+
+.post-title {
+    display: flex;
+    color: #3A4F9A;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.post-body {
+    display: flex;
+    margin: 20px;
+    width: 359px;
+    height: 109px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #575757;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+  }
+  
+  .post-link {
+    color: #3A4F9A;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+  }

@@ -2,7 +2,12 @@ import { posts } from "app";
 import { showPostDetailsPage } from "postsDetail";
 
 export function showPostPage() {
-    const postsElement = document.getElementById("posts")
+    const userTitle = document.getElementById("title");
+    const userPosts = document.createElement("h1");
+    userTitle?.appendChild(userPosts);
+    userPosts.textContent = "User posts";
+    userPosts.classList.add("title");
+    const postsElement = document.getElementById("posts");
     if (!postsElement) return;
 
     posts.forEach((posts) => {
