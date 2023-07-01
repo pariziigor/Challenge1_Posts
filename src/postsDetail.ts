@@ -39,7 +39,7 @@ export function showPostDetailsPage(postId: number) {
     body.classList.add("details-body");
 
     const commentsDiv = document.createElement("div");
-    postsElement.appendChild(commentsDiv);
+    postDetails.appendChild(commentsDiv);
     commentsDiv.classList.add("comments-div");
 
     const comments = getCommentsByPostId(postId);
@@ -74,5 +74,6 @@ export function showPostDetailsPage(postId: number) {
     backImage.src = "../assets/images/ArrowIcon.png";
     backButton.appendChild(backImage);
     postsElement.appendChild(backDiv);
+    backDiv.classList.add("back-button");
 }
 

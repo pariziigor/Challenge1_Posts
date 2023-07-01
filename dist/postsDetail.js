@@ -31,7 +31,7 @@ export function showPostDetailsPage(postId) {
     postDetails.appendChild(body);
     body.classList.add("details-body");
     const commentsDiv = document.createElement("div");
-    postsElement.appendChild(commentsDiv);
+    postDetails.appendChild(commentsDiv);
     commentsDiv.classList.add("comments-div");
     const comments = getCommentsByPostId(postId);
     if (comments.length > 0) {
@@ -60,5 +60,6 @@ export function showPostDetailsPage(postId) {
     backImage.src = "../assets/images/ArrowIcon.png";
     backButton.appendChild(backImage);
     postsElement.appendChild(backDiv);
+    backDiv.classList.add("back-button");
 }
 //# sourceMappingURL=postsDetail.js.map
