@@ -112,3 +112,42 @@ main {
     line-height: 20px;
     letter-spacing: 1.3px;
 }
+
+.details-div {
+    width: 771px;
+    height: 519px;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.details-img {
+    width: 771px;
+    height: 519px;
+    flex-shrink: 0;
+}
+
+.details-title {
+    padding: 20px 0px;
+    color: #3A4F9A;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.details-body {
+    color: #575757;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+}

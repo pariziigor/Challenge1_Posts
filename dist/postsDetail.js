@@ -30,10 +30,13 @@ export function showPostDetailsPage(postId) {
     body.textContent = post.body;
     postDetails.appendChild(body);
     body.classList.add("details-body");
+    const commentsDiv = document.createElement("div");
+    postsElement.appendChild(commentsDiv);
+    commentsDiv.classList.add("comments-div");
     const comments = getCommentsByPostId(postId);
     if (comments.length > 0) {
         const commentsList = document.createElement("ul");
-        postDetails.appendChild(commentsList);
+        commentsDiv.appendChild(commentsList);
         commentsList.classList.add("comment-ul");
         comments.forEach((comment) => {
             const commentItem = document.createElement("li");
@@ -56,6 +59,6 @@ export function showPostDetailsPage(postId) {
     backButton.href = "index.html";
     backImage.src = "../assets/images/ArrowIcon.png";
     backButton.appendChild(backImage);
-    postDetails.appendChild(backDiv);
+    postsElement.appendChild(backDiv);
 }
 //# sourceMappingURL=postsDetail.js.map

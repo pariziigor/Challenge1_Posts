@@ -1,5 +1,4 @@
 import { Post, Comment, comments, posts} from "./app";
-import { showPostPage } from "./posts";
 
 function getCommentsByPostId(postId: number): Comment[] {
     return comments.filter((comment) => comment.postId === postId);
@@ -39,10 +38,15 @@ export function showPostDetailsPage(postId: number) {
     postDetails.appendChild(body);
     body.classList.add("details-body");
 
+    const commentsDiv = document.createElement("div");
+    postsElement.appendChild(commentsDiv);
+    commentsDiv.classList.add("comments-div");
+
     const comments = getCommentsByPostId(postId);
     if (comments.length > 0) {
+
         const commentsList = document.createElement("ul");
-        postDetails.appendChild(commentsList);
+        commentsDiv.appendChild(commentsList);
         commentsList.classList.add("comment-ul")
 
         comments.forEach((comment) => {
@@ -69,6 +73,6 @@ export function showPostDetailsPage(postId: number) {
     backButton.href = "index.html";
     backImage.src = "../assets/images/ArrowIcon.png";
     backButton.appendChild(backImage);
-    postDetails.appendChild(backDiv);
+    postsElement.appendChild(backDiv);
 }
 
