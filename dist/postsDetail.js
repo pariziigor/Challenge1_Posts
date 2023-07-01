@@ -16,6 +16,16 @@ export function showPostDetailsPage(postId) {
         return;
     const postDetails = document.createElement("div");
     postsElement.innerHTML = "";
+    const backDiv = document.createElement("div");
+    const backButton = document.createElement("a");
+    const backImage = document.createElement("img");
+    backDiv.appendChild(backButton);
+    backButton.href = "index.html";
+    backImage.src = "../assets/images/ArrowIcon.png";
+    backButton.appendChild(backImage);
+    postsElement.appendChild(backDiv);
+    backDiv.classList.add("back-button");
+    backImage.classList.add("button-image");
     postsElement.appendChild(postDetails);
     postDetails.classList.add("details-div");
     const image = document.createElement("img");
@@ -52,14 +62,5 @@ export function showPostDetailsPage(postId) {
             commentBody.classList.add("comment-body");
         });
     }
-    const backDiv = document.createElement("div");
-    const backButton = document.createElement("a");
-    const backImage = document.createElement("img");
-    backDiv.appendChild(backButton);
-    backButton.href = "index.html";
-    backImage.src = "../assets/images/ArrowIcon.png";
-    backButton.appendChild(backImage);
-    postsElement.appendChild(backDiv);
-    backDiv.classList.add("back-button");
 }
 //# sourceMappingURL=postsDetail.js.map
