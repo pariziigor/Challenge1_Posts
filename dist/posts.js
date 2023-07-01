@@ -1,11 +1,6 @@
 import { posts } from "./app.js";
 import { showPostDetailsPage } from "./postsDetail.js";
 export function showPostPage() {
-    const userTitle = document.getElementById("title");
-    const userPosts = document.createElement("h1");
-    userTitle === null || userTitle === void 0 ? void 0 : userTitle.appendChild(userPosts);
-    userPosts.textContent = "User posts";
-    userPosts.classList.add("title");
     const postsElement = document.getElementById("posts");
     if (!postsElement)
         return;

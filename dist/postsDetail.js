@@ -9,6 +9,8 @@ export function showPostDetailsPage(postId) {
     const postsElement = document.getElementById("posts");
     if (!postsElement)
         return;
+    const userPost = document.getElementById("userPost");
+    userPost === null || userPost === void 0 ? void 0 : userPost.classList.add("d-none");
     const post = getPostById(postId);
     if (!post)
         return;
@@ -47,9 +49,13 @@ export function showPostDetailsPage(postId) {
             commentBody.classList.add("comment-body");
         });
     }
+    const backDiv = document.createElement("div");
     const backButton = document.createElement("a");
+    const backImage = document.createElement("img");
+    backDiv.appendChild(backButton);
     backButton.href = "index.html";
-    backButton.textContent = "Go Back";
-    postDetails.appendChild(backButton);
+    backImage.src = "../assets/images/ArrowIcon.png";
+    backButton.appendChild(backImage);
+    postDetails.appendChild(backDiv);
 }
 //# sourceMappingURL=postsDetail.js.map

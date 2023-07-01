@@ -2,11 +2,6 @@ import { posts } from "app";
 import { showPostDetailsPage } from "postsDetail";
 
 export function showPostPage() {
-    const userTitle = document.getElementById("title");
-    const userPosts = document.createElement("h1");
-    userTitle?.appendChild(userPosts);
-    userPosts.textContent = "User posts";
-    userPosts.classList.add("title");
     const postsElement = document.getElementById("posts");
     if (!postsElement) return;
 
@@ -19,6 +14,7 @@ export function showPostPage() {
             showPostDetailsPage(posts.id);
         });
 
+        
         const postImg = document.createElement("img");
         postImg.src = posts.imageUrl;
         postDiv.appendChild(postImg);

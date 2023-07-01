@@ -1,4 +1,5 @@
 import { Post, Comment, comments, posts} from "./app";
+import { showPostPage } from "./posts";
 
 function getCommentsByPostId(postId: number): Comment[] {
     return comments.filter((comment) => comment.postId === postId);
@@ -11,6 +12,9 @@ function getPostById(id: number): Post | undefined{
 export function showPostDetailsPage(postId: number) {
     const postsElement = document.getElementById("posts");
     if (!postsElement) return;
+
+    const userPost = document.getElementById("userPost");
+    userPost?.classList.add("d-none");
 
     const post = getPostById(postId);
     if (!post) return;
@@ -58,9 +62,13 @@ export function showPostDetailsPage(postId: number) {
         });
     }
 
+    const backDiv = document.createElement("div");
     const backButton = document.createElement("a");
+    const backImage = document.createElement("img");
+    backDiv.appendChild(backButton);
     backButton.href = "index.html";
-    backButton.textContent = "Go Back";
-    postDetails.appendChild(backButton);
+    backImage.src = "../assets/images/ArrowIcon.png";
+    backButton.appendChild(backImage);
+    postDetails.appendChild(backDiv);
 }
 
