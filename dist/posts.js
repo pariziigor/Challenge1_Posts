@@ -24,10 +24,13 @@ export function showPostPage() {
         postBody.textContent = posts.body;
         postDiv.appendChild(postBody);
         postBody.classList.add("post-body");
+        const divLink = document.createElement("div");
+        postDiv.appendChild(divLink);
+        divLink.classList.add("div-link");
         const postLink = document.createElement("a");
         postLink.href = "#";
         postLink.textContent = "Expand...";
-        postBody.appendChild(postLink);
+        divLink.appendChild(postLink);
         postLink.classList.add("post-link");
         postLink.addEventListener("click", (event) => {
             event.preventDefault();

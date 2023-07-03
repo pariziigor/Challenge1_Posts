@@ -1,5 +1,5 @@
-import { posts } from "app";
-import { showPostDetailsPage } from "postsDetail";
+import { posts } from "./app";
+import { showPostDetailsPage } from "./postsDetail";
 
 export function showPostPage() {
     const postsElement = document.getElementById("posts");
@@ -30,10 +30,13 @@ export function showPostPage() {
         postDiv.appendChild(postBody);
         postBody.classList.add("post-body");
 
+        const divLink = document.createElement("div");
+        postDiv.appendChild(divLink);
+        divLink.classList.add("div-link");
         const postLink = document.createElement("a");
         postLink.href = "#";
         postLink.textContent = "Expand...";
-        postBody.appendChild(postLink);
+        divLink.appendChild(postLink);
         postLink.classList.add("post-link");
 
         postLink.addEventListener("click", (event) => {
